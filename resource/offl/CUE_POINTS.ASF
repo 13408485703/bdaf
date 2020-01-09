@@ -1,0 +1,43 @@
+--
+--           FILE :  CUE_POINTS.ASF 
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.2  |12/10/04 | K WAN       | updated for Guangzhou SAT
+--
+--
+--
+--
+/CUE_POINTS/
+--
+--Name  |     location      |  Pilot  |
+--      |                   | Display |
+--------------------------------------     
+  CUEN  |  232345N1131833E  |    Y    |          
+  CUES  |  232245N1131833E  |    Y    |          
+  CUEE  |  232315N1131900E  |    Y    |          
+  CUED  |  232315N1131830E  |    Y    |          
+--
+--
+--
+--RUNWAY CENTER PIONT
+--R02R  |  232333N1131830E  |    N    |
+--R02L  |  232332N1131713E  |    N    |
+--  EE    |  232338N1131834E  |    N    |
+--  WW    |  232338N1131715E  |    N    |
+--
+--
+--CUE_POINTS FOR DIVIATION
+  CYIN  |  YIN090010        |    N    |
+  CUP08 |  SHL080068        |    N    |
+  CP269 |  POU220064        |    N    |
+  CP268 |  234537N1123807E  |    N    |
+  

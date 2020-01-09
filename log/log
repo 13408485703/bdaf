@@ -1,0 +1,158 @@
+2020-01-09 01:20:53 System init finished!
+2020-01-09 01:21:02 Reload exe file finished!
+2020-01-09 01:21:08 MLog clients using log4j logging.
+2020-01-09 01:21:08 Initializing c3p0-0.9.2-pre1 [built 27-May-2010 01:00:49 -0400; debug? true; trace: 10]
+2020-01-09 01:21:08 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgex35a711pdjjh1086unc|1766b65, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.hxtt.sql.access.AccessDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgex35a711pdjjh1086unc|1766b65, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:Access:///bdaf.mdb?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, statementDestroyerNumActiveThreads -> -1, statementDestroyerNumConnectionsInUseAllUsers -> -1, statementDestroyerNumConnectionsInUseDefaultUser -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumIdleThreads -> -1, statementDestroyerNumTasksPending -> -1, statementDestroyerNumThreads -> -1, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2020-01-09 01:21:25 Convert to exe file and reload it finished!
+2020-01-09 01:21:33 CHB6229 AcType A20N/M undifined, continue!
+2020-01-09 01:21:33 CQN2355 AcType A20N/M undifined, continue!
+2020-01-09 01:21:33 CSN364 AcType A21N/M undifined, continue!
+2020-01-09 01:21:33 CSC8735 AcType A21N/M undifined, continue!
+2020-01-09 01:21:33 CSN6594 AcType A21N/M undifined, continue!
+2020-01-09 01:21:33 CSN3204 AcType A20N/M undifined, continue!
+2020-01-09 01:21:33 CSZ9408 AcType A20N/M undifined, continue!
+2020-01-09 01:21:33 CPA698 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 AMU897 AcType A20N/M undifined, continue!
+2020-01-09 01:21:34 VJC932 AcType A21N/M undifined, continue!
+2020-01-09 01:21:34 CAL064 AcType A359/H undifined, continue!
+2020-01-09 01:21:34 VJC938 AcType A21N/M undifined, continue!
+2020-01-09 01:21:34 CAL062 AcType A359/H undifined, continue!
+2020-01-09 01:21:34 UAE386 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 CPA698 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 CPA676 AcType A359/H undifined, continue!
+2020-01-09 01:21:34 CPA234 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 CPA382 AcType A35K/H undifined, continue!
+2020-01-09 01:21:34 QTR934 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 CSN8320 AcType A20N/M undifined, continue!
+2020-01-09 01:21:34 EVA088 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 CPA270 AcType A35K/H undifined, continue!
+2020-01-09 01:21:34 CPA288 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 CPA320 AcType A35K/H undifined, continue!
+2020-01-09 01:21:34 CPA216 AcType A35K/H undifined, continue!
+2020-01-09 01:21:34 CPA354 AcType A359/H undifined, continue!
+2020-01-09 01:21:34 CPA318 AcType A359/H undifined, continue!
+2020-01-09 01:21:34 CPA260 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 CPA252 AcType B77W/H undifined, continue!
+2020-01-09 01:21:34 IGO1773 AcType A20N/M undifined, continue!
+2020-01-09 01:21:34 CPA338 AcType A359/H undifined, continue!
+2020-01-09 01:21:34 Convert to exe file and reload it finished!
+2020-01-09 01:31:01 Save all skps finished!
+2020-01-09 01:31:25 Search skps in exe file finished!
+2020-01-09 01:31:33 Search skps in exe file finished!
+2020-01-09 01:32:31 Globe Replace OK!
+2020-01-09 01:36:00 Globe Replace OK!
+2020-01-09 01:38:55 Merge exe finished!
+2020-01-09 01:53:54 Fill EET for all skps in exe file finished!
+2020-01-09 02:01:42 Exe file isnot exist, please try again! EXE895
+2020-01-09 02:01:42 Reload exe file finished!
+2020-01-09 02:08:25 Exe file isnot exist, please try again! EXE895
+2020-01-09 02:08:25 Reload exe file finished!
+2020-01-09 02:08:30 Exe file isnot exist, please try again! EXE895
+2020-01-09 02:08:30 Reload exe file finished!
+2020-01-09 02:15:07 Reload exe file finished!
+2020-01-09 02:19:46 System init finished!
+2020-01-09 02:33:09 System init finished!
+2020-01-09 02:33:11 MLog clients using log4j logging.
+2020-01-09 02:33:11 Initializing c3p0-0.9.2-pre1 [built 27-May-2010 01:00:49 -0400; debug? true; trace: 10]
+2020-01-09 02:33:11 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgex35a711ry79d1s9nrg1|1580929, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.hxtt.sql.access.AccessDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgex35a711ry79d1s9nrg1|1580929, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:Access:///bdaf.mdb?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, statementDestroyerNumActiveThreads -> -1, statementDestroyerNumConnectionsInUseAllUsers -> -1, statementDestroyerNumConnectionsInUseDefaultUser -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumIdleThreads -> -1, statementDestroyerNumTasksPending -> -1, statementDestroyerNumThreads -> -1, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2020-01-09 02:49:02 Reload exe file finished!
+2020-01-09 04:51:57 System init finished!
+2020-01-09 04:52:15 Reload exe file finished!
+2020-01-09 04:53:41 MLog clients using log4j logging.
+2020-01-09 04:53:41 Initializing c3p0-0.9.2-pre1 [built 27-May-2010 01:00:49 -0400; debug? true; trace: 10]
+2020-01-09 04:53:41 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgex35a711wyvzh13zkq5b|c2a43e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.hxtt.sql.access.AccessDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgex35a711wyvzh13zkq5b|c2a43e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:Access:///bdaf.mdb?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, statementDestroyerNumActiveThreads -> -1, statementDestroyerNumConnectionsInUseAllUsers -> -1, statementDestroyerNumConnectionsInUseDefaultUser -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumIdleThreads -> -1, statementDestroyerNumTasksPending -> -1, statementDestroyerNumThreads -> -1, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2020-01-09 04:53:42 Convert to exe file and reload it finished!
+2020-01-09 04:54:11 CHB6229 AcType A20N/M undifined, continue!
+2020-01-09 04:54:11 CQN2355 AcType A20N/M undifined, continue!
+2020-01-09 04:54:11 CSN364 AcType A21N/M undifined, continue!
+2020-01-09 04:54:11 CSC8735 AcType A21N/M undifined, continue!
+2020-01-09 04:54:11 CSN6594 AcType A21N/M undifined, continue!
+2020-01-09 04:54:11 CSN3204 AcType A20N/M undifined, continue!
+2020-01-09 04:54:11 CSZ9408 AcType A20N/M undifined, continue!
+2020-01-09 04:54:11 CPA698 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 AMU897 AcType A20N/M undifined, continue!
+2020-01-09 04:54:11 VJC932 AcType A21N/M undifined, continue!
+2020-01-09 04:54:11 CAL064 AcType A359/H undifined, continue!
+2020-01-09 04:54:11 VJC938 AcType A21N/M undifined, continue!
+2020-01-09 04:54:11 CAL062 AcType A359/H undifined, continue!
+2020-01-09 04:54:11 UAE386 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 CPA698 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 CPA676 AcType A359/H undifined, continue!
+2020-01-09 04:54:11 CPA234 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 CPA382 AcType A35K/H undifined, continue!
+2020-01-09 04:54:11 QTR934 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 CSN8320 AcType A20N/M undifined, continue!
+2020-01-09 04:54:11 EVA088 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 CPA270 AcType A35K/H undifined, continue!
+2020-01-09 04:54:11 CPA288 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 CPA320 AcType A35K/H undifined, continue!
+2020-01-09 04:54:11 CPA216 AcType A35K/H undifined, continue!
+2020-01-09 04:54:11 CPA354 AcType A359/H undifined, continue!
+2020-01-09 04:54:11 CPA318 AcType A359/H undifined, continue!
+2020-01-09 04:54:11 CPA260 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 CPA252 AcType B77W/H undifined, continue!
+2020-01-09 04:54:11 IGO1773 AcType A20N/M undifined, continue!
+2020-01-09 04:54:12 CPA338 AcType A359/H undifined, continue!
+2020-01-09 04:54:12 Convert to exe file and reload it finished!
+2020-01-09 05:19:21 System init finished!
+2020-01-09 05:20:22 Reload exe file finished!
+2020-01-09 14:30:43 System init finished!
+2020-01-09 14:31:47 System init finished!
+2020-01-09 14:33:18 NavData init failed!
+2020-01-09 14:33:18 java.io.FileNotFoundException: resource\offl\CUE_POINTS.ASF (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.best.bdaf.data.NavData.init(NavData.java:49)
+	at com.best.bdaf.main.App.init(App.java:61)
+	at com.best.bdaf.main.App.main(App.java:50)
+
+2020-01-09 14:33:18 System init finished!
+2020-01-09 14:35:56 System init finished!
+2020-01-09 14:37:22 System init finished!
+2020-01-09 14:37:30 System init finished!
+2020-01-09 14:38:16 MLog clients using log4j logging.
+2020-01-09 14:38:17 Initializing c3p0-0.9.2-pre1 [built 27-May-2010 01:00:49 -0400; debug? true; trace: 10]
+2020-01-09 14:38:17 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgex35a712huoc7pmjxd6|15e7f59, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.hxtt.sql.access.AccessDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgex35a712huoc7pmjxd6|15e7f59, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:Access:///bdaf.mdb?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, statementDestroyerNumActiveThreads -> -1, statementDestroyerNumConnectionsInUseAllUsers -> -1, statementDestroyerNumConnectionsInUseDefaultUser -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumIdleThreads -> -1, statementDestroyerNumTasksPending -> -1, statementDestroyerNumThreads -> -1, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2020-01-09 14:38:18 CHB6229 AcType A20N/M undifined, continue!
+2020-01-09 14:38:18 CQN2355 AcType A20N/M undifined, continue!
+2020-01-09 14:38:18 CSN6383 AcType A20N/M undifined, continue!
+2020-01-09 14:38:18 TXJ233 AcType FA7X/M undifined, continue!
+2020-01-09 14:38:18 CSN6594 AcType A21N/M undifined, continue!
+2020-01-09 14:38:18 HVN520 AcType A21N/M undifined, continue!
+2020-01-09 14:38:18 CES2071 AcType A20N/M undifined, continue!
+2020-01-09 14:38:18 CSN3204 AcType A20N/M undifined, continue!
+2020-01-09 14:38:18 CCA745 AcType A21N/M undifined, continue!
+2020-01-09 14:38:19 CCA960 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 CSN8357 AcType A20N/M undifined, continue!
+2020-01-09 14:38:19 CCA1346 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 CCA4384 AcType A21N/M undifined, continue!
+2020-01-09 14:38:19 CSC8736 AcType A21N/M undifined, continue!
+2020-01-09 14:38:19 CPA251 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 CPA261 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 DLH731 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 CSN347 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 CPA293 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 KAL680 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 CPA343 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 CPA271 AcType A35K/H undifined, continue!
+2020-01-09 14:38:19 CPA289 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 CPA383 AcType A35K/H undifined, continue!
+2020-01-09 14:38:19 GCR6551 AcType A20N/M undifined, continue!
+2020-01-09 14:38:19 HVN416 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 CCA824 AcType A21N/M undifined, continue!
+2020-01-09 14:38:19 CPA233 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 CPA255 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 HVN346 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 CPA219 AcType A35K/H undifined, continue!
+2020-01-09 14:38:19 CPA237 AcType B77W/H undifined, continue!
+2020-01-09 14:38:19 HVN310 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 CPA675 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 HVN330 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 THA662 AcType A359/H undifined, continue!
+2020-01-09 14:38:19 CCA746 AcType A21N/M undifined, continue!
+2020-01-09 14:38:19 CES2072 AcType A20N/M undifined, continue!
+2020-01-09 14:38:19 CSN8358 AcType A20N/M undifined, continue!
+2020-01-09 14:38:19 Convert to exe file and reload it finished!
+2020-01-09 14:41:58 System init finished!
+2020-01-09 14:56:37 System init finished!

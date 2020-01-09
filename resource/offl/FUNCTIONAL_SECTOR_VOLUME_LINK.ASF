@@ -1,0 +1,87 @@
+--
+--  FILE: FUNCTIONAL_SECTOR_VOLUME_LINK 
+--
+--
+--
+--Volumic Sector
+--   |FDP Category
+--   |   |Functional Sector Name
+--   |   |     |Transition Fix
+-----------------------
+--
+-- 
+VAD    | A | DEPW   |  TVAD   |
+VAD    | A | DEPE   |  TVAD   |
+VAD    | A | ARE    |  TVAD   |
+VAD    | A | ARW    |  TVAD   |
+VTMA   | A | ANE     |  TVTMA  |
+VTMA   | A | ANW     |  TVTMA  |
+VTMA   | A | AE     |  TVTMA  |
+VTMA   | A | AW     |  TVTMA  |
+VTMA   | A | AM     |  TVTMA  |
+VACC1  | A | AC1    |  VAC1   | 
+VACC2  | A | AC2    |  VAC2   | 
+VACC3  | A | AC3    |  VAC3   | 
+VACC4  | A | AC4    |  VAC4   |
+VACC4  | A | AC4E   |  VAC4   |
+VACC5  | A | AC5    |  VAC5   | 
+VACC6  | A | AC6    |  VAC6   | 
+VACC8  | A | AC8    |  VAC8   | 
+VACC11 | A | AC11   |  VAC11  | 
+VACC12 | A | AC12   |  VAC12  | 
+VACC13 | A | AC13   |  VAC13  | 
+VACC14 | A | AC14   |  VAC14  | 
+VACC15 | A | AC15   |  VAC15  | 
+VACC16 | A | AC16   |  VAC16  | 
+VACC17 | A | AC17   |  VAC17  | 
+VACC19 | A | AC19   |  VAC19  | 
+VACC27 | A | AC27   |  VAC27  | 
+VACC21 | A | AC21   |  VAC21  | 
+VACC20 | A | AC20   |  VAC20  | 
+VACC22 | A | AC22   |  VAC22  | 
+VACC23 | A | AC23   |  VAC23  | 
+VACC24 | A | AC24   |  VAC24  | 
+VACC25 | A | AC25   |  VAC25  | 
+VACC28 | A | AC28   |  VAC28  | 
+VACC29 | A | AC29   |  VAC29  | 
+VACC30 | A | AC30   |  VAC30  |
+VACC31 | A | AC31   |  VAC31  |
+VACC32 | A | AC32   |  VAC32  |
+VACC33 | A | AC33   |  VAC33  |
+VACC34 | A | AC34   |  VAC34  |
+VACC35 | A | AC35   |  VAC35  |
+VACC36 | A | AC36   |  VAC36  |
+VACC37 | A | AC37   |  VAC37  |
+VACC38 | A | AC38   |  VAC38  |
+
+VACC1  | A | AC1T   |  VAC1   |
+VACC2  | A | AC2T   |  VAC2   |
+VACC3  | A | AC3T   |  VAC3   |
+VACC4  | A | AC4T   |  VAC4   |
+VACC5  | A | AC5T   |  VAC5   |
+VACC6  | A | AC6T   |  VAC6   |
+VACC8  | A | AC8T   |  VAC8   |
+VACC11 | A | AC11T  |  VAC11  |
+VACC20 | A | AC20T  |  VAC20  |
+VACC22 | A | AC22T  |  VAC22  |
+VACC23 | A | AC23T  |  VAC23  |
+VACC24 | A | AC24T  |  VAC24  |
+VACC12 | A | AC12T  |  VAC12  |
+VACC13 | A | AC13T  |  VAC13  |
+VACC14 | A | AC14T  |  VAC14  |
+--VACC15 | A | AC15T  |  VAC15  |
+VACC16 | A | AC16T  |  VAC16  |
+VACC17 | A | AC17T  |  VAC17  |
+VACC19 | A | AC19T  |  VAC19  |
+VACC25 | A | AC25T  |  VAC25  |
+VACC27 | A | AC27T  |  VAC27  | 
+VACC21 | A | AC21T  |  VAC21  | 
+
+VAD    | A | BYC1   |  TVAD   |
+VAD    | A | BYA1   |  TVAD   |
+VAD    | A | BYC2   |  TVAD   |
+VAD    | A | BYA2   |  TVAD   |
+--
+--
+
+
