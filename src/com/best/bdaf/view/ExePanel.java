@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.Vector;
 
 import javax.swing.Box;
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -45,6 +46,8 @@ import com.best.bdaf.data.BdafUtils;
 import com.best.bdaf.main.App;
 import com.best.bdaf.view.subtype.ChangedTableCell;
 import com.best.bdaf.view.subtype.MyVFlowLayout;
+
+import javax.swing.JRadioButton;
 
 @SuppressWarnings("serial")
 public class ExePanel extends JPanel implements ActionListener,TableModelListener
@@ -88,6 +91,10 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 
 	private ArrayList<String> sameCallsigns = new ArrayList<String>();
 	private HashMap<String,Color> sameCallsignColors = new HashMap<String,Color>();
+	private JRadioButton rbtnReality;
+	private JRadioButton rbtnAftn;
+	private JRadioButton rbtnSector;
+	private JRadioButton rbtnFdrg;
 	
 	public ExePanel() 
 	{
@@ -154,6 +161,41 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 		fieldPilot.setText("2");
 		panelPilot.add(fieldPilot);
 		fieldPilot.setColumns(10);
+		
+		JPanel panelRouteFrom = new JPanel();
+//		panel2.add(panelRouteFrom);
+		
+		JLabel labelRouteFrom = new JLabel("Route From:");
+		panelRouteFrom.add(labelRouteFrom);
+		
+		rbtnReality = new JRadioButton("Reality");
+		rbtnReality.setSelected(true);
+		panelRouteFrom.add(rbtnReality);
+		
+		rbtnAftn = new JRadioButton("AFTN");
+		panelRouteFrom.add(rbtnAftn);
+		
+		ButtonGroup bg1 = new ButtonGroup();
+		bg1.add(rbtnReality);
+		bg1.add(rbtnAftn);
+		
+		JPanel panelRouteRange = new JPanel();
+		panel2.add(panelRouteRange);
+		
+		JLabel labelRouteRange = new JLabel("Route Range:");
+		panelRouteRange.add(labelRouteRange);
+		
+		rbtnSector = new JRadioButton("Sector");
+		rbtnSector.setSelected(true);
+		panelRouteRange.add(rbtnSector);
+		
+		rbtnFdrg = new JRadioButton("FDRG");
+		panelRouteRange.add(rbtnFdrg);
+		
+		ButtonGroup bg2 = new ButtonGroup();
+		bg2.add(rbtnSector);
+		bg2.add(rbtnFdrg);
+		
 		
 		JPanel panelBeginConvert = new JPanel();
 		panel2.add(panelBeginConvert);
@@ -363,7 +405,8 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 						ArrayList<LocalFlightPlanDB> lfps = new ArrayList<LocalFlightPlanDB>(App.getApp().getDbService().getLocalFlightPlanDBs());
 						Collections.sort(lfps);
 						
-						ArrayList<Skp> skps = BdafUtils.getSkpsFromFpls(exenum, time, durationsecs, choosedsectornames, pilot, lfps);
+						ArrayList<Skp> skps = BdafUtils.getSkpsFromFpls(exenum, time, durationsecs, choosedsectornames, pilot, 
+							rbtnReality.isSelected(),rbtnSector.isSelected(),lfps);
 						BdafUtils.writeSkpsToExe(exenum, skps);
 						reloadSkps(exenum,null,null);
 						AppLogger.info("Convert to exe file and reload it finished!");
@@ -855,6 +898,7 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 			return super.getTableCellRendererComponent(table, value, isSelected,
                     hasFocus, row, column);
 		}
+		
 	}
 
 	@Override

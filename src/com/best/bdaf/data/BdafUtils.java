@@ -16,6 +16,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 
+import sun.java2d.pipe.AATileGenerator;
+
 import com.best.bdaf.dao.ComFplDB;
 import com.best.bdaf.dao.LocalFlightPlanDB;
 import com.best.bdaf.dao.LocalFlightPlanDB.E_exit_protocol;
@@ -615,7 +617,7 @@ public class BdafUtils {
 	
 	//不满足条件的计划返回值为null
 	public static Skp getSkpFromFpl(LocalFlightPlanDB lfp, Date time, int durationsecs, 
-			ArrayList<String> choosedsectornames) throws Exception
+			ArrayList<String> choosedsectornames, boolean routeFromReality, boolean routeRangeSector) throws Exception
 	{
 		//用入界时间来判断执行日期
 		if(!sdf_dof.format(time).equals(sdf_dof.format(lfp.getEntry_hour())))
@@ -656,7 +658,7 @@ public class BdafUtils {
 		//校验注册号
 		if(lfp.getAircraft_registration().length() == 0)
 		{
-			AppLogger.info(lfp.getCallsign()+" REG is empty, tring use callsign!");
+			AppLogger.info(lfp.getCallsign()+" REG is empty, use callsign!");
 			lfp.setAircraft_registration("B"+lfp.getCallsign());
 		}
 		
@@ -686,18 +688,33 @@ public class BdafUtils {
 			lfpfs.remove(0);
 		if(lfpfs.size()>0 && lfpfs.get(lfpfs.size()-1).getFix_kind().equals(E_fix_kind.AIRPORT.toString()))
 			lfpfs.remove(lfpfs.size()-1);
+		
 		//缩短航路，取入界点和出界点之间并各自向外延伸一个已定义的航路点，防止出现点太远无法生成航迹
 		int entryindex = 0;
 		int exitindex = lfpfs.size()-1;
-		for(int i=lfpfs.size()-1;i>=0;i--)
+		//找入界点
+		for(int i=0;i<lfpfs.size();i++)
 		{		
 			LocalFlightPlanFixesDB lfpf = lfpfs.get(i);
 			E_fix_kind kind = E_fix_kind.valueOf(lfpf.getFix_kind());
 			if(kind.equals(E_fix_kind.ENT_POINT))
+			{
 				entryindex = i;
-			else if(kind.equals(E_fix_kind.EXT_POINT))
-				exitindex = i;
+				break;
+			}
 		}
+		//找出界点
+		for(int i=lfpfs.size()-1;i>=0;i--)
+		{		
+			LocalFlightPlanFixesDB lfpf = lfpfs.get(i);
+			E_fix_kind kind = E_fix_kind.valueOf(lfpf.getFix_kind());
+			if(kind.equals(E_fix_kind.EXT_POINT))
+			{
+				exitindex = i;
+				break;
+			}
+		}
+		//找离入界点、出界点最近的在导航台中有定义的点
 		int nearest_out_enterindex = entryindex;
 		int nearest_out_exitindex = exitindex;
 		for(int i=entryindex-1;i>=0;i--)
@@ -719,6 +736,7 @@ public class BdafUtils {
 			}
 		}
 		lfpfs = lfpfs.subList(nearest_out_enterindex, nearest_out_exitindex+1);
+
 		
 		//判断AAT和出现位置（航路第一个点）、出现高度以及航路
 		//出现点在航路中的序号
@@ -745,7 +763,7 @@ public class BdafUtils {
 		else
 		{
 			//在某两个航路点过点时间之间，
-			//则应按比例推算出此时间的位置和高度，并插入航路这两个点之间
+			//则应按比例推算出此时间的位置和高度，并插入航路在这两个点之间
 			for(int i=0; i<lfpfs.size()-1; i++)
 			{
 				LocalFlightPlanFixesDB lfpf1 = lfpfs.get(i);
@@ -773,6 +791,7 @@ public class BdafUtils {
 					lfpf2.setFix_name(lfpf2.getFix_name()+"/B");
 					break;
 				}
+				//两个点之间，则插入出现点，并设置其过点时间、功能扇区等
 				else if(time.after(route1time) && time.before(route2time))
 				{
 					aatpointindex = i+1;
@@ -799,47 +818,145 @@ public class BdafUtils {
 					
 					LocalFlightPlanFixesDB insertlfpf = new LocalFlightPlanFixesDB();
 					insertlfpf.setFix_name(aatfixname);
+					insertlfpf.setReference_eto(time);
+					insertlfpf.setCurrent_functional_sector(lfpf1.getCurrent_functional_sector());	
 					lfpfs.add(i+1, insertlfpf);
 					
 					break;
 				}
 			}
 		}
-		//将航路中未定义名称的点去掉（或者都转换为经纬度表示）
+		
+		//若只选择扇区相关航路，则将出现点延迟到快进扇区时的最后一个已定义的点，并在扇区结束后最后一个点消失
+		if(routeRangeSector == true)
+		{
+			//找到相关扇区入界点和出界点
+			//先找到入界时第一个所选扇区内的点
+			int first_sector_index = 0;
+			int last_sector_index = lfpfs.size()-1;
+			loop1:
+			for(int i=0;i<lfpfs.size();i++)
+			{
+				LocalFlightPlanFixesDB lfpf = lfpfs.get(i);		
+				for(String choosedsectorname: choosedsectornames)
+				{
+					if(lfpf.getCurrent_functional_sector().equals(choosedsectorname))
+					{
+						first_sector_index = i;
+						break loop1;
+					}
+				}	
+			}
+			//再向入界前外延一个点，并保证不超出0
+			first_sector_index-- ;
+			if(first_sector_index < 0)
+				first_sector_index = 0;
+			
+			//先找到出界时第一个所选扇区内的点
+			loop2:
+			for(int i=lfpfs.size()-1;i>=0;i--)
+			{
+				LocalFlightPlanFixesDB lfpf = lfpfs.get(i);
+				for(String choosedsectorname: choosedsectornames)
+				{	
+					if(lfpf.getCurrent_functional_sector().equals(choosedsectorname))
+					{
+						last_sector_index = i;
+						break loop2;
+					}
+				}	
+			}
+			//再向出界后延一个点，并保证不超出所有航路点
+			last_sector_index++ ;
+			if(last_sector_index > (lfpfs.size()-1))
+				first_sector_index = lfpfs.size()-1;
+			
+			//找扇区入界点和出界点最近的在导航台中有定义的点
+			int nearest_first_sector_index = first_sector_index;
+			int nearest_last_sector_index = last_sector_index;
+			for(int i=first_sector_index;i>=0;i--)
+			{		
+				LocalFlightPlanFixesDB lfpf = lfpfs.get(i);
+				if(offl_fixnames.get(lfpf.getFix_name()) != null)
+				{
+					nearest_first_sector_index = i;
+					break;
+				}
+			}
+			for(int i=last_sector_index;i<lfpfs.size();i++)
+			{		
+				LocalFlightPlanFixesDB lfpf = lfpfs.get(i);
+				if(offl_fixnames.get(lfpf.getFix_name()) != null)
+				{
+					nearest_last_sector_index = i;
+					break;
+				}
+			}
+			
+			//然后看看出现点与扇区入界点的时间差，若扇区入界点时间晚于出现点时间，则出现时间后移，变成扇区入界点时间
+			int diffSecs = (int)((lfpfs.get(nearest_first_sector_index).getReference_eto().getTime()-
+				lfpfs.get(aatpointindex).getReference_eto().getTime())/1000);
+			if(diffSecs > 0)
+			{
+				LocalFlightPlanFixesDB lfpf_old = lfpfs.get(aatpointindex);
+				LocalFlightPlanFixesDB lfpf_new = lfpfs.get(nearest_first_sector_index);
+				
+				aatpointindex = nearest_first_sector_index;
+				aatsecs = diffSecs;
+				lfpf_old.setFix_name(lfpf_old.getFix_name().substring(0, lfpf_old.getFix_name().length()-2));
+				lfpf_new.setFix_name(lfpf_new.getFix_name()+"/B");
+			}
+			
+			//如果有扇区出界点能找到，且不是最后一个点，且大于出现点序号，则将扇区出界点名称+/E
+			if(nearest_last_sector_index>0 && (nearest_last_sector_index<lfpfs.size()-1) &&
+				(nearest_last_sector_index>aatpointindex))
+			{	
+				LocalFlightPlanFixesDB lfpf_nearest_last_sector = lfpfs.get(nearest_last_sector_index);
+				lfpf_nearest_last_sector.setFix_name(
+						lfpf_nearest_last_sector.getFix_name()+"/E");
+			}	
+		}
+		
+		//将航路中未定义名称的点转换为经纬度表示(或删除-已注释)
 		String patternlatlon = "[0-9]{4}N[0-9]{5}E";
 		for(int i=lfpfs.size()-1;i>=0;i--)
 		{
 			LocalFlightPlanFixesDB lfpf = lfpfs.get(i);
-			//对出现点处理-未定义的点名称则转换为经纬度
-			//同时出现点为第一个点时，无需加/B
-			if(i == aatpointindex)
+			//对出现点和出界点处理-未定义的点名称则转换为经纬度
+			//同时出现点为第一个点时，去掉/B
+			if(lfpf.getFix_name().endsWith("/B") || lfpf.getFix_name().endsWith("/E"))
 			{
-				//去掉/B，取出原始点名称
+				//去掉/B或/E，取出原始点名称
 				String ori_name = lfpf.getFix_name().substring(0,lfpf.getFix_name().length()-2);		
-				//出现点不是经纬度，且未定义，则使用经纬度+/B
-				if((!ori_name.matches(patternlatlon)) && (offl_fixnames.get(lfpf.getFix_name())==null)	)
-					lfpf.setFix_name(lfpf.getGeoposition()+"/B");
-				//出现点为航路第一个点，则去掉/B
-				if(aatpointindex == 0)
-					lfpf.setFix_name(lfpf.getFix_name().substring(0,lfpf.getFix_name().length()-2));
+				String name_end = lfpf.getFix_name().substring(lfpf.getFix_name().length()-2); 
+				//该点不是经纬度，且未定义，则替换成使用经纬度+/B或/E
+				if((!ori_name.matches(patternlatlon)) && (offl_fixnames.get(ori_name)==null))	
+				{
+					lfpf.setFix_name(lfpf.getGeoposition()+name_end);
+				}
+
+				//出现点为航路第一个点，则去掉/B；出界点为航路最后一个点，则去掉/E
+				if(i==0 || i==(lfpfs.size()-1))
+					lfpf.setFix_name(ori_name);
 				continue;
 			}
 
-			//对经纬度点不处理
+			//对经纬度点不用替换名称
 			if(lfpf.getFix_name().matches(patternlatlon))
 				continue;				
 			if(offl_fixnames.get(lfpf.getFix_name())==null)	
 			{
-				lfpfs.remove(lfpf);
-//				lfpf.setFix_name(lfpf.getGeoposition());
+//				lfpfs.remove(lfpf);
+				lfpf.setFix_name(lfpf.getGeoposition());
 			}
 		}
 		
-		//去除除了出现点以外的经纬度点
+		//去除除了出现点和第一个点、最后一个点以外的经纬度点
 		for(int i=lfpfs.size()-1;i>=0;i--)
 		{
+			if(i==aatpointindex || i==0 || i==(lfpfs.size()-1))
+				continue;
 			LocalFlightPlanFixesDB lfpf = lfpfs.get(i);
-			//对经纬度点都删除
 			if(lfpf.getFix_name().matches(patternlatlon))
 				lfpfs.remove(lfpf);	
 		}
@@ -988,7 +1105,8 @@ public class BdafUtils {
 		return skp;
 	}
 
-	public static ArrayList<Skp> getSkpsFromFpls(String exenum, Date time, int durationsecs, ArrayList<String> choosedsectornames, int pilot, ArrayList<LocalFlightPlanDB> lfps) throws Exception
+	public static ArrayList<Skp> getSkpsFromFpls(String exenum, Date time, int durationsecs, ArrayList<String> choosedsectornames, int pilot, 
+		boolean routeFromReality, boolean routeRangeSector, ArrayList<LocalFlightPlanDB> lfps) throws Exception
 	{
 		ArrayList<Skp> skps = new ArrayList<Skp>();
 		
@@ -996,7 +1114,8 @@ public class BdafUtils {
 		{
 			LocalFlightPlanDB lfp = lfps.get(i);
 			
-			Skp skp = BdafUtils.getSkpFromFpl(lfp, time, durationsecs, choosedsectornames);
+			Skp skp = BdafUtils.getSkpFromFpl(lfp, time, durationsecs, choosedsectornames,
+				routeFromReality, routeRangeSector);
 			if(skp == null) //不符合筛选条件
 				continue;
 
