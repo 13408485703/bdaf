@@ -1,0 +1,35 @@
+##ignore this file##
+/target/
+/bin/
+/build/
+/.settings/
+log_*
+
+.classpath
+.project
+.settings
+
+##filter databfile、sln file##
+*.ldb
+*.sln
+
+##class file##
+*.com
+*.class
+*.exe
+*.o
+
+##compression file##
+*.via
+*.tmp
+*.err
+
+##OS generated files##
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
