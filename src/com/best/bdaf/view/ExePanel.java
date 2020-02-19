@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
@@ -26,9 +27,11 @@ import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.RowSorter;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
@@ -38,6 +41,7 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
 
 import com.best.bdaf.dao.LocalFlightPlanDB;
 import com.best.bdaf.dao.Skp;
@@ -46,8 +50,6 @@ import com.best.bdaf.data.BdafUtils;
 import com.best.bdaf.main.App;
 import com.best.bdaf.view.subtype.ChangedTableCell;
 import com.best.bdaf.view.subtype.MyVFlowLayout;
-
-import javax.swing.JRadioButton;
 
 @SuppressWarnings("serial")
 public class ExePanel extends JPanel implements ActionListener,TableModelListener
@@ -237,7 +239,8 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 		tableSkp.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 		tableSkp.setAutoscrolls(false);
 		tableSkp.getColumnModel().getColumn(tableSkp.getColumnCount()-1).setPreferredWidth(30*50);
-
+		//设置表头排序
+//		tableSkp.setAutoCreateRowSorter(true);
 		
 		TableColumnModel tcm = tableSkp.getColumnModel();
 	    for (int i = 0; i < tcm.getColumnCount(); i++) 
@@ -401,7 +404,6 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 								choosedsectornames.add(cb.getText());
 						}
 						
-						
 						ArrayList<LocalFlightPlanDB> lfps = new ArrayList<LocalFlightPlanDB>(App.getApp().getDbService().getLocalFlightPlanDBs());
 						Collections.sort(lfps);
 						
@@ -438,8 +440,8 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 		{
 			try
 			{
-				int selectrow = tableSkp.getSelectedRow();
-				if(selectrow == -1)
+				int selectedRow = tableSkp.getSelectedRow();
+				if(selectedRow == -1)
 				{
 					JOptionPane.showMessageDialog(App.getApp().getMainView(), "Should choose a SKP!");
 					return;
@@ -447,7 +449,7 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 				else
 				{
 					String exenum = (String)cbExe.getSelectedItem();
-					new SkpDetailView(App.getApp().getMainView()).popup(readedSkps, selectrow+1, exenum, true);
+					new SkpDetailView(App.getApp().getMainView()).popup(readedSkps, selectedRow+1, exenum, true);
 				}
 			}catch (Exception ex) {
 				AppLogger.error(ex);
@@ -468,8 +470,8 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 		{
 			try
 			{		
-				int selectrow = tableSkp.getSelectedRow();
-				if(selectrow == -1)
+				int selectRow = tableSkp.getSelectedRow();
+				if(selectRow == -1)
 				{
 					JOptionPane.showMessageDialog(App.getApp().getMainView(), "Should choose a SKP!");
 					return;
@@ -477,9 +479,9 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 				else
 				{
 					//在选中行下方增加复制该行
-					Skp skp = readedSkps.get(selectrow);
+					Skp skp = readedSkps.get(selectRow);
 					Skp newSkp = (Skp)skp.clone();
-					readedSkps.add(selectrow, newSkp);
+					readedSkps.add(selectRow, newSkp);
 					
 					String exenum = (String)cbExe.getSelectedItem();
 					BdafUtils.writeSkpsToExe(exenum, readedSkps);
@@ -496,28 +498,32 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 		{
 			try
 			{
-				int selectrow = tableSkp.getSelectedRow();
-				if(selectrow == -1)
+				int[] selectedRows = tableSkp.getSelectedRows();
+				if(selectedRows.length == 0)
 				{
-					JOptionPane.showMessageDialog(App.getApp().getMainView(), "Should choose a SKP!");
+					JOptionPane.showMessageDialog(App.getApp().getMainView(), "Should choose at least one SKP!");
 					return;
 				}
 				else
 				{
-					int r = JOptionPane.showConfirmDialog(App.getApp().getMainView(), "Sure to remove SKP?", 
+					int r = JOptionPane.showConfirmDialog(App.getApp().getMainView(), "Sure to remove SKPs?", 
 							"Confirm do", JOptionPane.YES_NO_OPTION);
 					if(r != JOptionPane.YES_OPTION)
 						return;
 					
-					readedSkps.remove(selectrow);
+					//升序排序后逆序删除，确保正确
+					Arrays.sort(selectedRows);
+					for(int i=selectedRows.length-1;i>=0;i--)
+						readedSkps.remove(selectedRows[i]);
+					
 					String exenum = (String)cbExe.getSelectedItem();
 					BdafUtils.writeSkpsToExe(exenum, readedSkps);
 					BdafUtils.writeSkpsumToExeList(exenum, readedSkps.size());
 					reloadSkps(exenum,null,null);
-					AppLogger.info("Remove SKP and reload exe file finished!");
+					AppLogger.info("Remove SKPs and reload exe file finished!");
 				}
 			}catch (Exception ex) {
-				AppLogger.info("Remove SKP and reload exe file failed, please try again!");
+				AppLogger.info("Remove SKPs and reload exe file failed, please try again!");
 				AppLogger.error(ex);
 			}	
 		}

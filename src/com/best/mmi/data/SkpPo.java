@@ -35,6 +35,8 @@ public class SkpPo {
 	private int m_nLine1Y[];
 	private int m_nLine2X[];
 	private int m_nLine2Y[];
+	private int m_nLine3X[];
+	private int m_nLine3Y[];
 	
 	private int m_nLabelLeaderEndX[];
 	private int m_nLabelLeaderEndY[];
@@ -70,6 +72,11 @@ public class SkpPo {
 				fixname = fixname.substring(0,fixname.length()-2);
 				m_nAatFixIndex = i;
 			}
+			else if(fixname.endsWith("/E"))
+			{
+				fixname = fixname.substring(0,fixname.length()-2);
+			}
+			
 			if(fixname.matches(patternlatlon))
 			{
 				Point p = ToolList.convertLatLongStringToDistanceP(fixname);
@@ -102,6 +109,8 @@ public class SkpPo {
 		m_nLine1Y = new int[2];
 		m_nLine2X = new int[2];
 		m_nLine2Y = new int[2];
+		m_nLine3X = new int[2];
+		m_nLine3Y = new int[2];
 		m_nLabelLeaderEndX = new int[2];
 		m_nLabelLeaderEndY = new int[2];
 		
@@ -148,6 +157,7 @@ public class SkpPo {
 			m_nLine1X[radarViewNum], m_nLine1Y[radarViewNum]);
 		g.drawString(m_sSkp.getFlToString()+" "+m_sSkp.getTasToString(), 
 			m_nLine2X[radarViewNum], m_nLine2Y[radarViewNum]);
+		g.drawString(m_sSkp.getDest(), m_nLine3X[radarViewNum], m_nLine3Y[radarViewNum]);
 		
 		g.drawOval(m_nScreenX[radarViewNum]-3, m_nScreenY[radarViewNum]-3, 6, 6);
 		
@@ -215,11 +225,13 @@ public class SkpPo {
 		int chWidth = fm.stringWidth("A");
 		
 		m_nLabelWidth = chWidth*9;
-		m_nLabelHeight = chHeight*2+3;
+		m_nLabelHeight = chHeight*3+3;
 		m_nLine1X[radarViewNum] = m_nLabelX[radarViewNum]+3;	
 		m_nLine1Y[radarViewNum] = m_nLabelY[radarViewNum]+chHeight;
 		m_nLine2X[radarViewNum] = m_nLabelX[radarViewNum]+3;
 		m_nLine2Y[radarViewNum] = m_nLabelY[radarViewNum]+chHeight*2;
+		m_nLine3X[radarViewNum] = m_nLabelX[radarViewNum]+3;
+		m_nLine3Y[radarViewNum] = m_nLabelY[radarViewNum]+chHeight*3;
 		
 		if(m_nScreenX[radarViewNum]>m_nLabelX[radarViewNum] 
 		   && m_nScreenX[radarViewNum]<(m_nLabelX[radarViewNum]+m_nLabelWidth) 

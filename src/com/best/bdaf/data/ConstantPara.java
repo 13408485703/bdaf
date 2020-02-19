@@ -5,7 +5,7 @@ package com.best.bdaf.data;
 
 public class ConstantPara
 {
-	public static final String str_version = "3.1.20200118" ;
+	public static final String str_version = "3.2.20200219" ;
 	
 	public static String str_time_zone = "UTC";
 	public static int n_max_excelcolumn = 60000;
