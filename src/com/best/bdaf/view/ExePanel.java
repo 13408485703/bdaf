@@ -240,7 +240,7 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 		tableSkp.setAutoscrolls(false);
 		tableSkp.getColumnModel().getColumn(tableSkp.getColumnCount()-1).setPreferredWidth(30*50);
 		//设置表头排序
-//		tableSkp.setAutoCreateRowSorter(true);
+		tableSkp.setAutoCreateRowSorter(true);
 		
 		TableColumnModel tcm = tableSkp.getColumnModel();
 	    for (int i = 0; i < tcm.getColumnCount(); i++) 
@@ -448,8 +448,9 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 				}
 				else
 				{
+					int realSelectedRow = tableSkp.convertRowIndexToModel(selectedRow);
 					String exenum = (String)cbExe.getSelectedItem();
-					new SkpDetailView(App.getApp().getMainView()).popup(readedSkps, selectedRow+1, exenum, true);
+					new SkpDetailView(App.getApp().getMainView()).popup(readedSkps, realSelectedRow+1, exenum, true);
 				}
 			}catch (Exception ex) {
 				AppLogger.error(ex);
@@ -478,10 +479,11 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 				}
 				else
 				{
+					int realSelectedRow = tableSkp.convertRowIndexToModel(selectRow);
 					//在选中行下方增加复制该行
-					Skp skp = readedSkps.get(selectRow);
+					Skp skp = readedSkps.get(realSelectedRow);
 					Skp newSkp = (Skp)skp.clone();
-					readedSkps.add(selectRow, newSkp);
+					readedSkps.add(realSelectedRow, newSkp);
 					
 					String exenum = (String)cbExe.getSelectedItem();
 					BdafUtils.writeSkpsToExe(exenum, readedSkps);
@@ -511,10 +513,14 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 					if(r != JOptionPane.YES_OPTION)
 						return;
 					
+					int[] realSelectedRows = new int[selectedRows.length];
+					for(int i=0;i<realSelectedRows.length;i++)
+						realSelectedRows[i] = tableSkp.convertRowIndexToModel(selectedRows[i]);
+					
 					//升序排序后逆序删除，确保正确
-					Arrays.sort(selectedRows);
-					for(int i=selectedRows.length-1;i>=0;i--)
-						readedSkps.remove(selectedRows[i]);
+					Arrays.sort(realSelectedRows);
+					for(int i=realSelectedRows.length-1;i>=0;i--)
+						readedSkps.remove(realSelectedRows[i]);
 					
 					String exenum = (String)cbExe.getSelectedItem();
 					BdafUtils.writeSkpsToExe(exenum, readedSkps);
@@ -881,7 +887,7 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 			boolean isChanged = false;
 			for(ChangedTableCell ctc : changedTableCells)
 			{
-				if(tableModelSkp.getValueAt(row, 0).equals(ctc.rowName) &&
+				if(tableModelSkp.getValueAt(tableSkp.convertRowIndexToModel(row), 0).equals(ctc.rowName) &&
 					tableSkp.getColumnName(column).equals(ctc.columnName))
 				{
 					isChanged = true;
@@ -892,7 +898,7 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 				setBackground(Color.ORANGE);
 			else
 			{
-				String callsign = (String)tableModelSkp.getValueAt(row, 1);
+				String callsign = (String)tableModelSkp.getValueAt(tableSkp.convertRowIndexToModel(row), 1);
 				Color color = sameCallsignColors.get(callsign);
 				if(color != null)
 					setBackground(color);
@@ -913,10 +919,10 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 
 		if(e.getType() == TableModelEvent.UPDATE){
 
-			String newvalue = tableModelSkp.getValueAt(e.getLastRow(),e.getColumn()).toString();
+			String newvalue = tableModelSkp.getValueAt(tableSkp.convertRowIndexToModel(e.getLastRow()),e.getColumn()).toString();
 			if(!editValue.equals(newvalue.trim())){
 				ChangedTableCell ctc = new ChangedTableCell(		
-					(String)tableModelSkp.getValueAt(e.getLastRow(), 0),
+					(String)tableModelSkp.getValueAt(tableSkp.convertRowIndexToModel(e.getLastRow()), 0),
 					tableModelSkp.getColumnName(e.getColumn()));
 				
 				changedTableCells.add(ctc);

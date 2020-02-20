@@ -1,66 +1,237 @@
-2020-02-19 02:25:07 System init finished!
-2020-02-19 02:28:10 System init finished!
-2020-02-19 02:28:58 Reload exe file finished!
-2020-02-19 02:29:49 Search skps in exe file finished!
-2020-02-19 02:31:23 System init finished!
-2020-02-19 02:32:15 System init finished!
-2020-02-19 02:32:22 Reload exe file finished!
-2020-02-19 02:33:06 System init finished!
-2020-02-19 02:33:11 Reload exe file finished!
-2020-02-19 02:33:26 Remove SKP and reload exe file finished!
-2020-02-19 02:35:04 System init finished!
-2020-02-19 02:35:07 Reload exe file finished!
-2020-02-19 02:35:17 Reload exe file finished!
-2020-02-19 02:37:11 System init finished!
-2020-02-19 02:37:13 Reload exe file finished!
-2020-02-19 02:37:22 Remove SKPs and reload exe file finished!
-2020-02-19 02:41:28 Remove SKPs and reload exe file finished!
-2020-02-19 02:46:34 Remove SKPs and reload exe file finished!
-2020-02-19 02:46:55 System init finished!
-2020-02-19 02:48:10 System init finished!
-2020-02-19 02:48:16 System init finished!
-2020-02-19 02:48:20 System init finished!
-2020-02-19 02:48:24 Reload exe file finished!
-2020-02-19 02:48:30 Remove SKPs and reload exe file finished!
-2020-02-19 02:53:11 System init finished!
-2020-02-19 02:53:20 Reload exe file finished!
-2020-02-19 03:01:38 System init finished!
-2020-02-19 03:01:41 Reload exe file finished!
-2020-02-19 03:02:30 System init finished!
-2020-02-19 03:02:38 Reload exe file finished!
-2020-02-19 03:03:55 Save all skps finished!
-2020-02-19 03:04:06 Reload exe file finished!
-2020-02-19 03:04:06 Reload exe file finished!
-2020-02-19 03:04:10 Reload exe file finished!
-2020-02-19 03:04:37 Save all skps finished!
-2020-02-19 03:04:41 Reload exe file finished!
-2020-02-19 03:04:42 Reload exe file finished!
-2020-02-19 03:04:51 Save all skps finished!
-2020-02-19 03:06:10 Save all skps finished!
-2020-02-19 03:06:21 Save all skps finished!
-2020-02-19 03:06:40 Save all skps finished!
-2020-02-19 03:07:08 System init finished!
-2020-02-19 03:07:11 Reload exe file finished!
-2020-02-19 03:12:50 System init finished!
-2020-02-19 03:12:54 Reload exe file finished!
-2020-02-19 03:51:51 System init finished!
-2020-02-19 03:51:58 Reload exe file finished!
-2020-02-19 03:52:03 Remove SKPs and reload exe file finished!
-2020-02-19 03:52:12 Remove SKPs and reload exe file finished!
-2020-02-19 03:52:26 Remove SKPs and reload exe file finished!
-2020-02-19 03:53:03 Remove SKPs and reload exe file finished!
-2020-02-19 03:53:24 System init finished!
-2020-02-19 03:54:05 Reload exe file finished!
-2020-02-19 03:54:57 System init finished!
-2020-02-19 03:55:01 Reload exe file finished!
-2020-02-19 04:01:14 System init finished!
-2020-02-19 04:01:18 Reload exe file finished!
-2020-02-19 04:01:21 Dup SKP and reload exe file finished!
-2020-02-19 04:01:31 Dup SKP and reload exe file finished!
-2020-02-19 04:05:07 System init finished!
-2020-02-19 04:05:09 Reload exe file finished!
-2020-02-19 04:05:21 Dup SKP and reload exe file finished!
-2020-02-19 04:05:26 Reload exe file finished!
-2020-02-19 04:05:27 Reload exe file finished!
-2020-02-19 04:05:27 Reload exe file finished!
-2020-02-19 04:05:28 Reload exe file finished!
+2020-02-20 02:01:33 System init finished!
+2020-02-20 02:01:38 Reload exe file finished!
+2020-02-20 02:03:50 System init finished!
+2020-02-20 02:03:54 Reload exe file finished!
+2020-02-20 02:03:59 Reload exe file finished!
+2020-02-20 02:04:00 Reload exe file finished!
+2020-02-20 02:07:31 System init finished!
+2020-02-20 02:07:34 Reload exe file finished!
+2020-02-20 02:09:50 System init finished!
+2020-02-20 02:09:53 Reload exe file finished!
+2020-02-20 02:14:10 System init finished!
+2020-02-20 02:14:14 Reload exe file finished!
+2020-02-20 02:14:39 Save all skps finished!
+2020-02-20 02:15:02 Reload exe file finished!
+2020-02-20 02:15:32 Save all skps finished!
+2020-02-20 02:15:58 Reload exe file finished!
+2020-02-20 02:16:00 Reload exe file finished!
+2020-02-20 02:17:18 System init finished!
+2020-02-20 02:17:21 Reload exe file finished!
+2020-02-20 02:17:29 Dup SKP and reload exe file finished!
+2020-02-20 02:17:40 Dup SKP and reload exe file finished!
+2020-02-20 02:17:46 Save all skps finished!
+2020-02-20 02:18:55 System init finished!
+2020-02-20 02:18:59 Reload exe file finished!
+2020-02-20 02:19:09 Remove SKPs and reload exe file finished!
+2020-02-20 02:19:19 Remove SKPs and reload exe file finished!
+2020-02-20 02:19:46 Remove SKPs and reload exe file finished!
+2020-02-20 02:20:28 Remove SKPs and reload exe file finished!
+2020-02-20 02:22:35 System init finished!
+2020-02-20 02:22:39 Reload exe file finished!
+2020-02-20 02:22:49 Remove SKPs and reload exe file finished!
+2020-02-20 02:23:12 Remove SKPs and reload exe file finished!
+2020-02-20 02:52:27 System init finished!
+2020-02-20 02:52:53 Begin remove old FPLS!
+2020-02-20 02:52:53 MLog clients using log4j logging.
+2020-02-20 02:52:53 Initializing c3p0-0.9.2-pre1 [built 27-May-2010 01:00:49 -0400; debug? true; trace: 10]
+2020-02-20 02:52:53 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgem0xa8qs19kc1ited8v|1d3018e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.hxtt.sql.access.AccessDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgem0xa8qs19kc1ited8v|1d3018e, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:Access:///bdaf.mdb?useUnicode=true&characterEncoding=UTF8&useServerPrepStmts=true&prepStmtCacheSqlLimit=256&cachePrepStmts=true&prepStmtCacheSize=256&rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, statementDestroyerNumActiveThreads -> -1, statementDestroyerNumConnectionsInUseAllUsers -> -1, statementDestroyerNumConnectionsInUseDefaultUser -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumConnectionsWithDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumDeferredDestroyStatementsAllUsers -> -1, statementDestroyerNumDeferredDestroyStatementsDefaultUser -> -1, statementDestroyerNumIdleThreads -> -1, statementDestroyerNumTasksPending -> -1, statementDestroyerNumThreads -> -1, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2020-02-20 02:52:56 Finish remove old FPLS!
+2020-02-20 02:52:56 Begin read file!
+2020-02-20 02:52:56 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1400\local\REC_FDP_200105_1400.nrpf
+2020-02-20 02:52:57 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1400\local\REC_FDP_200105_1400.nrpf
+2020-02-20 02:52:57 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1400\local\REC_FDP_200105_1400.nrpf
+2020-02-20 02:52:57 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1400\local\REC_FDP_200105_1400.nrpf
+2020-02-20 02:52:57 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1415\local\REC_FDP_200105_1415.nrpf
+2020-02-20 02:52:58 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1415\local\REC_FDP_200105_1415.nrpf
+2020-02-20 02:52:58 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1415\local\REC_FDP_200105_1415.nrpf
+2020-02-20 02:52:58 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1415\local\REC_FDP_200105_1415.nrpf
+2020-02-20 02:52:58 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1430\local\REC_FDP_200105_1430.nrpf
+2020-02-20 02:52:58 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1430\local\REC_FDP_200105_1430.nrpf
+2020-02-20 02:52:59 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1430\local\REC_FDP_200105_1430.nrpf
+2020-02-20 02:52:59 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1430\local\REC_FDP_200105_1430.nrpf
+2020-02-20 02:52:59 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1445\local\REC_FDP_200105_1445.nrpf
+2020-02-20 02:52:59 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1445\local\REC_FDP_200105_1445.nrpf
+2020-02-20 02:52:59 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1445\local\REC_FDP_200105_1445.nrpf
+2020-02-20 02:52:59 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1445\local\REC_FDP_200105_1445.nrpf
+2020-02-20 02:52:59 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1500\local\REC_FDP_200105_1500.nrpf
+2020-02-20 02:53:00 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1500\local\REC_FDP_200105_1500.nrpf
+2020-02-20 02:53:00 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1500\local\REC_FDP_200105_1500.nrpf
+2020-02-20 02:53:00 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1500\local\REC_FDP_200105_1500.nrpf
+2020-02-20 02:53:00 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1515\local\REC_FDP_200105_1515.nrpf
+2020-02-20 02:53:01 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1515\local\REC_FDP_200105_1515.nrpf
+2020-02-20 02:53:01 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1515\local\REC_FDP_200105_1515.nrpf
+2020-02-20 02:53:01 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1515\local\REC_FDP_200105_1515.nrpf
+2020-02-20 02:53:01 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1530\local\REC_FDP_200105_1530.nrpf
+2020-02-20 02:53:01 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1530\local\REC_FDP_200105_1530.nrpf
+2020-02-20 02:53:02 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1530\local\REC_FDP_200105_1530.nrpf
+2020-02-20 02:53:02 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1530\local\REC_FDP_200105_1530.nrpf
+2020-02-20 02:53:02 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1545\local\REC_FDP_200105_1545.nrpf
+2020-02-20 02:53:02 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1545\local\REC_FDP_200105_1545.nrpf
+2020-02-20 02:53:02 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1545\local\REC_FDP_200105_1545.nrpf
+2020-02-20 02:53:02 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1545\local\REC_FDP_200105_1545.nrpf
+2020-02-20 02:53:02 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1600\local\REC_FDP_200105_1600.nrpf
+2020-02-20 02:53:03 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1600\local\REC_FDP_200105_1600.nrpf
+2020-02-20 02:53:03 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1600\local\REC_FDP_200105_1600.nrpf
+2020-02-20 02:53:03 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1600\local\REC_FDP_200105_1600.nrpf
+2020-02-20 02:53:03 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1615\local\REC_FDP_200105_1615.nrpf
+2020-02-20 02:53:04 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1615\local\REC_FDP_200105_1615.nrpf
+2020-02-20 02:53:04 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1615\local\REC_FDP_200105_1615.nrpf
+2020-02-20 02:53:04 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1615\local\REC_FDP_200105_1615.nrpf
+2020-02-20 02:53:04 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1630\local\REC_FDP_200105_1630.nrpf
+2020-02-20 02:53:04 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1630\local\REC_FDP_200105_1630.nrpf
+2020-02-20 02:53:04 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1630\local\REC_FDP_200105_1630.nrpf
+2020-02-20 02:53:04 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1630\local\REC_FDP_200105_1630.nrpf
+2020-02-20 02:53:04 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1645\local\REC_FDP_200105_1645.nrpf
+2020-02-20 02:53:05 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1645\local\REC_FDP_200105_1645.nrpf
+2020-02-20 02:53:05 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1645\local\REC_FDP_200105_1645.nrpf
+2020-02-20 02:53:05 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1645\local\REC_FDP_200105_1645.nrpf
+2020-02-20 02:53:05 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1700\local\REC_FDP_200105_1700.nrpf
+2020-02-20 02:53:05 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1700\local\REC_FDP_200105_1700.nrpf
+2020-02-20 02:53:06 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1700\local\REC_FDP_200105_1700.nrpf
+2020-02-20 02:53:06 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1700\local\REC_FDP_200105_1700.nrpf
+2020-02-20 02:53:06 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1715\local\REC_FDP_200105_1715.nrpf
+2020-02-20 02:53:06 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1715\local\REC_FDP_200105_1715.nrpf
+2020-02-20 02:53:06 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1715\local\REC_FDP_200105_1715.nrpf
+2020-02-20 02:53:06 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1715\local\REC_FDP_200105_1715.nrpf
+2020-02-20 02:53:06 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1730\local\REC_FDP_200105_1730.nrpf
+2020-02-20 02:53:06 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1730\local\REC_FDP_200105_1730.nrpf
+2020-02-20 02:53:06 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1730\local\REC_FDP_200105_1730.nrpf
+2020-02-20 02:53:06 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1730\local\REC_FDP_200105_1730.nrpf
+2020-02-20 02:53:06 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1745\local\REC_FDP_200105_1745.nrpf
+2020-02-20 02:53:07 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1745\local\REC_FDP_200105_1745.nrpf
+2020-02-20 02:53:07 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1745\local\REC_FDP_200105_1745.nrpf
+2020-02-20 02:53:07 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1745\local\REC_FDP_200105_1745.nrpf
+2020-02-20 02:53:07 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1800\local\REC_FDP_200105_1800.nrpf
+2020-02-20 02:53:07 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1800\local\REC_FDP_200105_1800.nrpf
+2020-02-20 02:53:07 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1800\local\REC_FDP_200105_1800.nrpf
+2020-02-20 02:53:07 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1800\local\REC_FDP_200105_1800.nrpf
+2020-02-20 02:53:07 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1815\local\REC_FDP_200105_1815.nrpf
+2020-02-20 02:53:07 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1815\local\REC_FDP_200105_1815.nrpf
+2020-02-20 02:53:07 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1815\local\REC_FDP_200105_1815.nrpf
+2020-02-20 02:53:07 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1815\local\REC_FDP_200105_1815.nrpf
+2020-02-20 02:53:07 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1830\local\REC_FDP_200105_1830.nrpf
+2020-02-20 02:53:08 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1830\local\REC_FDP_200105_1830.nrpf
+2020-02-20 02:53:08 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1830\local\REC_FDP_200105_1830.nrpf
+2020-02-20 02:53:08 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1830\local\REC_FDP_200105_1830.nrpf
+2020-02-20 02:53:08 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1845\local\REC_FDP_200105_1845.nrpf
+2020-02-20 02:53:08 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1845\local\REC_FDP_200105_1845.nrpf
+2020-02-20 02:53:08 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1845\local\REC_FDP_200105_1845.nrpf
+2020-02-20 02:53:08 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1845\local\REC_FDP_200105_1845.nrpf
+2020-02-20 02:53:08 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1900\local\REC_FDP_200105_1900.nrpf
+2020-02-20 02:53:08 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1900\local\REC_FDP_200105_1900.nrpf
+2020-02-20 02:53:08 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1900\local\REC_FDP_200105_1900.nrpf
+2020-02-20 02:53:08 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1900\local\REC_FDP_200105_1900.nrpf
+2020-02-20 02:53:08 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1915\local\REC_FDP_200105_1915.nrpf
+2020-02-20 02:53:08 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1915\local\REC_FDP_200105_1915.nrpf
+2020-02-20 02:53:08 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1915\local\REC_FDP_200105_1915.nrpf
+2020-02-20 02:53:08 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1915\local\REC_FDP_200105_1915.nrpf
+2020-02-20 02:53:08 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1930\local\REC_FDP_200105_1930.nrpf
+2020-02-20 02:53:09 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1930\local\REC_FDP_200105_1930.nrpf
+2020-02-20 02:53:09 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1930\local\REC_FDP_200105_1930.nrpf
+2020-02-20 02:53:09 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1930\local\REC_FDP_200105_1930.nrpf
+2020-02-20 02:53:09 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_1945\local\REC_FDP_200105_1945.nrpf
+2020-02-20 02:53:09 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_1945\local\REC_FDP_200105_1945.nrpf
+2020-02-20 02:53:09 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_1945\local\REC_FDP_200105_1945.nrpf
+2020-02-20 02:53:09 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_1945\local\REC_FDP_200105_1945.nrpf
+2020-02-20 02:53:09 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2000\local\REC_FDP_200105_2000.nrpf
+2020-02-20 02:53:09 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2000\local\REC_FDP_200105_2000.nrpf
+2020-02-20 02:53:09 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2000\local\REC_FDP_200105_2000.nrpf
+2020-02-20 02:53:09 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2000\local\REC_FDP_200105_2000.nrpf
+2020-02-20 02:53:09 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2015\local\REC_FDP_200105_2015.nrpf
+2020-02-20 02:53:09 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2015\local\REC_FDP_200105_2015.nrpf
+2020-02-20 02:53:09 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2015\local\REC_FDP_200105_2015.nrpf
+2020-02-20 02:53:09 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2015\local\REC_FDP_200105_2015.nrpf
+2020-02-20 02:53:09 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2030\local\REC_FDP_200105_2030.nrpf
+2020-02-20 02:53:09 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2030\local\REC_FDP_200105_2030.nrpf
+2020-02-20 02:53:10 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2030\local\REC_FDP_200105_2030.nrpf
+2020-02-20 02:53:10 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2030\local\REC_FDP_200105_2030.nrpf
+2020-02-20 02:53:10 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2045\local\REC_FDP_200105_2045.nrpf
+2020-02-20 02:53:10 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2045\local\REC_FDP_200105_2045.nrpf
+2020-02-20 02:53:10 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2045\local\REC_FDP_200105_2045.nrpf
+2020-02-20 02:53:10 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2045\local\REC_FDP_200105_2045.nrpf
+2020-02-20 02:53:10 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2100\local\REC_FDP_200105_2100.nrpf
+2020-02-20 02:53:10 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2100\local\REC_FDP_200105_2100.nrpf
+2020-02-20 02:53:10 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2100\local\REC_FDP_200105_2100.nrpf
+2020-02-20 02:53:10 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2100\local\REC_FDP_200105_2100.nrpf
+2020-02-20 02:53:10 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2115\local\REC_FDP_200105_2115.nrpf
+2020-02-20 02:53:10 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2115\local\REC_FDP_200105_2115.nrpf
+2020-02-20 02:53:10 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2115\local\REC_FDP_200105_2115.nrpf
+2020-02-20 02:53:10 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2115\local\REC_FDP_200105_2115.nrpf
+2020-02-20 02:53:10 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2130\local\REC_FDP_200105_2130.nrpf
+2020-02-20 02:53:10 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2130\local\REC_FDP_200105_2130.nrpf
+2020-02-20 02:53:10 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2130\local\REC_FDP_200105_2130.nrpf
+2020-02-20 02:53:10 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2130\local\REC_FDP_200105_2130.nrpf
+2020-02-20 02:53:10 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2145\local\REC_FDP_200105_2145.nrpf
+2020-02-20 02:53:10 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2145\local\REC_FDP_200105_2145.nrpf
+2020-02-20 02:53:10 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2145\local\REC_FDP_200105_2145.nrpf
+2020-02-20 02:53:10 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2145\local\REC_FDP_200105_2145.nrpf
+2020-02-20 02:53:10 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2200\local\REC_FDP_200105_2200.nrpf
+2020-02-20 02:53:11 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2200\local\REC_FDP_200105_2200.nrpf
+2020-02-20 02:53:11 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2200\local\REC_FDP_200105_2200.nrpf
+2020-02-20 02:53:11 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2200\local\REC_FDP_200105_2200.nrpf
+2020-02-20 02:53:11 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2215\local\REC_FDP_200105_2215.nrpf
+2020-02-20 02:53:11 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2215\local\REC_FDP_200105_2215.nrpf
+2020-02-20 02:53:11 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2215\local\REC_FDP_200105_2215.nrpf
+2020-02-20 02:53:11 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2215\local\REC_FDP_200105_2215.nrpf
+2020-02-20 02:53:11 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2230\local\REC_FDP_200105_2230.nrpf
+2020-02-20 02:53:11 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2230\local\REC_FDP_200105_2230.nrpf
+2020-02-20 02:53:11 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2230\local\REC_FDP_200105_2230.nrpf
+2020-02-20 02:53:11 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2230\local\REC_FDP_200105_2230.nrpf
+2020-02-20 02:53:11 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2245\local\REC_FDP_200105_2245.nrpf
+2020-02-20 02:53:11 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2245\local\REC_FDP_200105_2245.nrpf
+2020-02-20 02:53:12 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2245\local\REC_FDP_200105_2245.nrpf
+2020-02-20 02:53:12 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2245\local\REC_FDP_200105_2245.nrpf
+2020-02-20 02:53:12 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2300\local\REC_FDP_200105_2300.nrpf
+2020-02-20 02:53:12 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2300\local\REC_FDP_200105_2300.nrpf
+2020-02-20 02:53:12 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2300\local\REC_FDP_200105_2300.nrpf
+2020-02-20 02:53:12 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2300\local\REC_FDP_200105_2300.nrpf
+2020-02-20 02:53:12 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2315\local\REC_FDP_200105_2315.nrpf
+2020-02-20 02:53:12 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2315\local\REC_FDP_200105_2315.nrpf
+2020-02-20 02:53:12 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2315\local\REC_FDP_200105_2315.nrpf
+2020-02-20 02:53:12 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2315\local\REC_FDP_200105_2315.nrpf
+2020-02-20 02:53:12 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2330\local\REC_FDP_200105_2330.nrpf
+2020-02-20 02:53:13 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2330\local\REC_FDP_200105_2330.nrpf
+2020-02-20 02:53:13 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2330\local\REC_FDP_200105_2330.nrpf
+2020-02-20 02:53:13 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2330\local\REC_FDP_200105_2330.nrpf
+2020-02-20 02:53:13 Begin convert file: E:\DataSamples\REC_FDP_gz\REC_20200105_2345\local\REC_FDP_200105_2345.nrpf
+2020-02-20 02:53:13 Begin save new FPLs! E:\DataSamples\REC_FDP_gz\REC_20200105_2345\local\REC_FDP_200105_2345.nrpf
+2020-02-20 02:53:13 Finish save new FPLS! E:\DataSamples\REC_FDP_gz\REC_20200105_2345\local\REC_FDP_200105_2345.nrpf
+2020-02-20 02:53:13 Finish conver file: E:\DataSamples\REC_FDP_gz\REC_20200105_2345\local\REC_FDP_200105_2345.nrpf
+2020-02-20 02:53:13 Finish read file!
+2020-02-20 02:55:17 CHB6229 AcType A20N/M undifined, continue!
+2020-02-20 02:55:17 CQN2355 AcType A20N/M undifined, continue!
+2020-02-20 02:55:17 CSN364 AcType A21N/M undifined, continue!
+2020-02-20 02:55:17 CSC8735 AcType A21N/M undifined, continue!
+2020-02-20 02:55:17 CSN6594 AcType A21N/M undifined, continue!
+2020-02-20 02:55:17 CSN3204 AcType A20N/M undifined, continue!
+2020-02-20 02:55:17 CSZ9408 AcType A20N/M undifined, continue!
+2020-02-20 02:55:17 CPA698 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 AMU897 AcType A20N/M undifined, continue!
+2020-02-20 02:55:17 VJC932 AcType A21N/M undifined, continue!
+2020-02-20 02:55:17 CAL064 AcType A359/H undifined, continue!
+2020-02-20 02:55:17 VJC938 AcType A21N/M undifined, continue!
+2020-02-20 02:55:17 CAL062 AcType A359/H undifined, continue!
+2020-02-20 02:55:17 UAE386 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 CPA698 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 CPA676 AcType A359/H undifined, continue!
+2020-02-20 02:55:17 CPA234 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 CPA382 AcType A35K/H undifined, continue!
+2020-02-20 02:55:17 QTR934 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 CSN8320 AcType A20N/M undifined, continue!
+2020-02-20 02:55:17 EVA088 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 CPA270 AcType A35K/H undifined, continue!
+2020-02-20 02:55:17 CPA288 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 CPA320 AcType A35K/H undifined, continue!
+2020-02-20 02:55:17 CPA216 AcType A35K/H undifined, continue!
+2020-02-20 02:55:17 CPA354 AcType A359/H undifined, continue!
+2020-02-20 02:55:17 CPA318 AcType A359/H undifined, continue!
+2020-02-20 02:55:17 CPA260 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 CPA252 AcType B77W/H undifined, continue!
+2020-02-20 02:55:17 IGO1773 AcType A20N/M undifined, continue!
+2020-02-20 02:55:17 CPA338 AcType A359/H undifined, continue!
+2020-02-20 02:55:17 Convert to exe file and reload it finished!
+2020-02-20 02:55:49 Dup SKP and reload exe file finished!
+2020-02-20 02:55:56 Dup SKP and reload exe file finished!
+2020-02-20 02:56:36 Save all skps finished!
+2020-02-20 02:56:47 Remove SKPs and reload exe file finished!
+2020-02-20 02:56:57 Remove SKPs and reload exe file finished!
