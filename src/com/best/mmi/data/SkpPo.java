@@ -44,6 +44,7 @@ public class SkpPo {
 	private Color m_sColor;
 	private boolean m_bShow;
 	private boolean m_bOnlyShowCurrentPos;
+	private boolean m_bInhibit;
 	
 	
 	public Point currentPos;  //当前位置
@@ -142,7 +143,9 @@ public class SkpPo {
 		if(m_bOnlyShowCurrentPos==true && (realNextRouteNum==-99 || realNextRouteNum==99))
 			return;
 			
-		if(realNextRouteNum == -99)
+		if(m_bInhibit == true)
+			g.setColor(Color.GRAY);
+		else if(realNextRouteNum == -99)
 			g.setColor(Color.BLUE);
 		else if(realNextRouteNum == 99)
 			g.setColor(Color.WHITE);
@@ -155,9 +158,9 @@ public class SkpPo {
 				m_nLabelLeaderEndX[radarViewNum], m_nLabelLeaderEndY[radarViewNum]);
 		g.drawString(m_sSkp.getCallsign(), 
 			m_nLine1X[radarViewNum], m_nLine1Y[radarViewNum]);
-		g.drawString(m_sSkp.getFlToString()+" "+m_sSkp.getTasToString(), 
+		g.drawString(m_sSkp.getFlToString()+">"+m_sSkp.getCflToString()+" "+m_sSkp.getTasToString(), 
 			m_nLine2X[radarViewNum], m_nLine2Y[radarViewNum]);
-		g.drawString(m_sSkp.getDest(), m_nLine3X[radarViewNum], m_nLine3Y[radarViewNum]);
+		g.drawString(m_sSkp.getDest()+" "+m_sSkp.getActype(), m_nLine3X[radarViewNum], m_nLine3Y[radarViewNum]);
 		
 		g.drawOval(m_nScreenX[radarViewNum]-3, m_nScreenY[radarViewNum]-3, 6, 6);
 		
@@ -273,6 +276,7 @@ public class SkpPo {
 	public void setColor(Color c) {m_sColor = c;}
 	public void setShow(boolean b) {m_bShow = b;}
 	public void setOnlyShowCurrentPos(boolean b) {m_bOnlyShowCurrentPos = b;}
+	public void setInhibit(boolean b) {m_bInhibit = b;}
 
 	public Skp getSkp() {return m_sSkp;}
 	public int getLabelX(int radarViewNum) {return m_nLabelX[radarViewNum];}
@@ -289,4 +293,5 @@ public class SkpPo {
 	public boolean getShow() {return m_bShow;}
 	public ArrayList<RouteFix> getRFs() {return m_sRFs;}
 	public boolean getOnlyShowCurrentPos() {return m_bOnlyShowCurrentPos;}
+	public boolean getInhibit() {return m_bInhibit;}
 }

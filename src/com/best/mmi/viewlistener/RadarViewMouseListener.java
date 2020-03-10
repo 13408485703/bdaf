@@ -149,7 +149,14 @@ public class RadarViewMouseListener implements MouseInputListener,MouseWheelList
 				{
 					//航迹右键菜单
 					JPopupMenu pm = new JPopupMenu();
-					JMenuItem mi = new JMenuItem("Show SKP");
+					JMenuItem mi = new JMenuItem("Inhibit/No Inhibit");
+					mi.addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent arg0) {
+							m_sSkpPo.setInhibit(!m_sSkpPo.getInhibit());
+						}
+					});
+					pm.add(mi);
+					mi = new JMenuItem("Show SKP");
 					mi.addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent arg0) {
 							new SkpDetailView(App.getApp().getRadarView(0)).popup(m_sSkpPo.getSkp());

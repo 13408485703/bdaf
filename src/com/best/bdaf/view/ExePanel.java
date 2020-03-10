@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,7 +32,6 @@ import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.RowSorter;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
@@ -41,7 +41,6 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
-import javax.swing.table.TableRowSorter;
 
 import com.best.bdaf.dao.LocalFlightPlanDB;
 import com.best.bdaf.dao.Skp;
@@ -316,6 +315,7 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 		panelS2.add(fieldSearch);
 		
 		btnSearch = new JButton("Search");
+		btnSearch.setForeground(Color.BLUE);
 		btnSearch.addActionListener(this);
 		panelS2.add(btnSearch);
 		
@@ -809,26 +809,6 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 	{
 		this.readedSkps = BdafUtils.getSkpsFromExeFile(exenum);
 		
-		if(searchType!=null && searchValue!=null && !searchValue.equals(""))
-		{
-			for(int i=readedSkps.size()-1;i>=0;i--)	
-			{
-				Skp skp = readedSkps.get(i);
-				String attr = null;
-				if(searchType.equals("Callsign"))
-					attr = skp.getCallsign();
-				else if(searchType.equals("Actype"))
-					attr = skp.getActype();
-
-				if(!attr.contains(searchValue))
-				{
-					readedSkps.remove(skp);
-					continue;
-				}	
-			}
-		}
-
-		
 		DefaultTableModel dtm = (DefaultTableModel)tableSkp.getModel();
 		dtm.setRowCount(0);
 		changedTableCells.clear();
@@ -884,6 +864,7 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 				int column) {
 			// TODO Auto-generated method stub
 			
+			//背景色颜色区分是否单元格被编辑或航班号重复
 			boolean isChanged = false;
 			for(ChangedTableCell ctc : changedTableCells)
 			{
@@ -905,6 +886,27 @@ public class ExePanel extends JPanel implements ActionListener,TableModelListene
 				else
 					setBackground(Color.CYAN);
 			}
+			
+			//前景色区分是否是被查找的航班
+			String searchType = (String)cbSearchType.getSelectedItem();
+			String searchValue = fieldSearch.getText().trim();
+			if(searchType!=null && searchValue!=null && !searchValue.equals(""))
+			{
+				String attr = null;
+				if(searchType.equals("Callsign"))
+					attr = (String)tableModelSkp.getValueAt(tableSkp.convertRowIndexToModel(row), 1);
+				else if(searchType.equals("Actype"))
+					attr =(String)tableModelSkp.getValueAt(tableSkp.convertRowIndexToModel(row), 9);
+				
+				if(attr.contains(searchValue))
+				{
+					setForeground(Color.BLUE);
+				}
+				else 
+					setForeground(Color.BLACK);
+			}
+			else
+				setForeground(Color.BLACK);
 			
 			
 			return super.getTableCellRendererComponent(table, value, isSelected,
